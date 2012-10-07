@@ -5,7 +5,7 @@ finance.yahoo.com, which delivers a csv file with data for various fields,
 which are documented at http:\/\/www.gummy-stuff.org\/Yahoo-data.htm.
 
 The homepage for this module is 
-http:\/\/www.b7j0c.org\/stuff\/haskell-yquote.xhtml
+http:\/\/www.b7j0c.org\/stuff\/haskell-yquote.html
 
 The license for this module is at
 http:\/\/www.b7j0c.org\/stuff\/license.txt
@@ -86,7 +86,7 @@ import qualified Data.List as D (intersperse)
   License info:
 
   The license is a simple BSD3-style license available here:  
-  http://www.b7j0c.org/content/license.txt
+  http://www.b7j0c.org/stuff/license.txt
 
 -}
 
