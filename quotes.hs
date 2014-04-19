@@ -3,7 +3,7 @@ import Finance.Quote.Yahoo
 import Data.Time.Calendar
 import Data.Map 
 
-quoteSymbolList = ["YHOO","^DJI"] :: [QuoteSymbol]
+quoteSymbolList = ["YHOO"] :: [QuoteSymbol]
 quoteFieldsList = ["s","l1","c"] :: [QuoteField]
 
 main = do
@@ -13,8 +13,8 @@ main = do
     Just m -> case (Data.Map.lookup ("YHOO","l1") m) of
                    Nothing -> print "no match"
                    Just a -> print a
-  let startDate = Data.Time.Calendar.fromGregorian 2007 07 01
-  let endDate = Data.Time.Calendar.fromGregorian 2008 02 01
+  let startDate = Data.Time.Calendar.fromGregorian 2013 07 01
+  let endDate = Data.Time.Calendar.fromGregorian 2013 08 01
   h <- getHistoricalQuote (head quoteSymbolList) startDate endDate Monthly
   case h of 
     Nothing -> error "no historical"

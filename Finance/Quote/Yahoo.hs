@@ -49,7 +49,7 @@ Here is small complete program illustrating the use of this module
   import Finance\.Quote\.Yahoo
   import Data\.Time\.Calendar
   import Data\.Map
-  quoteSymbolList = [\"YHOO\",\"^DJI\"] :: [QuoteSymbol]
+  quoteSymbolList = [\"YHOO\"] :: [QuoteSymbol]
   quoteFieldsList = [\"s\",\"l1\",\"c\"] :: [QuoteField]
   main = do
   q <- getQuote quoteSymbolList quoteFieldsList
@@ -81,6 +81,8 @@ import qualified Data.Time.Format as F (formatTime)
 import qualified System.Locale as L (defaultTimeLocale)
 import qualified Data.Map as M (fromList,Map)
 import qualified Data.List as D (intersperse)
+
+import Debug.Trace
 
   {-
   License info:
@@ -121,7 +123,7 @@ quoteReq symbols fields =
 -- produce the map, an error is triggered.
 parseQuote :: [QuoteSymbol] -> [QuoteField] -> QuoteCSV ->
               Maybe (M.Map (QuoteSymbol, QuoteField) QuoteValue)
-parseQuote symbols fields csv = 
+parseQuote symbols fields csv =
   let l = concatMap (csplit ',') $ C.lines $ 
           C.filter (\c -> notElem c "\r\"") csv
       p = [(x,y) | x <- symbols, y <- fields] in
