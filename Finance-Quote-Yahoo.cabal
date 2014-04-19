@@ -9,19 +9,14 @@ License:             BSD3
 License-file:        LICENSE
 Author:              brad clawsie
 Maintainer:          haskell@fastmail.fm
-cabal-version: 	     >=1.2
+cabal-version: 	     >=1.6
 build-type:          Simple
 
-Flag splitBase
-  Description: Choose the new smaller, split-up base package.
 Library 
-  if flag(splitBase)
-    Build-Depends: base >= 3,containers,old-locale
-  else
-    Build-Depends: base < 3
-  Build-Depends: bytestring,http-conduit,network,time,old-locale
+  Build-Depends: base >= 3 && < 5,bytestring,http-conduit,network,time,old-locale
   Exposed-modules:     Finance.Quote.Yahoo
 
 source-repository this
   type:             git
   location:         https://github.com/bradclawsie/haskell-Finance.Quote.Yahoo
+  tag:              0.8
