@@ -1,5 +1,5 @@
 Name:                Finance-Quote-Yahoo
-Version:             0.7.0
+Version:             0.8.0
 Description:         Obtain quote data from finance.yahoo.com
 Synopsis:	     Obtain quote data from finance.yahoo.com
 Category:            Web
@@ -18,5 +18,5 @@ Library
     Build-Depends: base >= 3,containers,old-locale
   else
     Build-Depends: base < 3
-  Build-Depends: network,time>=1.1.1,HTTP>=4000.0.5
+  Build-Depends: bytestring,http-conduit,network,time,old-locale
   Exposed-modules:     Finance.Quote.Yahoo
