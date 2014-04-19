@@ -11,6 +11,7 @@ Author:              brad clawsie
 Maintainer:          haskell@fastmail.fm
 cabal-version: 	     >=1.2
 build-type:          Simple
+source-repositiry:   https://github.com/bradclawsie/haskell-Finance.Quote.Yahoo
 Flag splitBase
   Description: Choose the new smaller, split-up base package.
 Library 
