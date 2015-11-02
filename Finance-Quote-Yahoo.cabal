@@ -13,7 +13,16 @@ cabal-version: 	     >=1.6
 build-type:          Simple
 
 Library 
-  Build-Depends: base >= 3 && < 5,bytestring,http-conduit,network,time,old-locale
+  Build-Depends:
+    base >= 3 && < 5,
+    bytestring,
+    containers,
+    http-conduit,
+    network,
+    network-uri,
+    time,
+    old-locale
+
   Exposed-modules:     Finance.Quote.Yahoo
 
 source-repository this
