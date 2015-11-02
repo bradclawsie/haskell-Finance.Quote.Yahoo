@@ -15,13 +15,13 @@ build-type:          Simple
 Library 
   Build-Depends:
     base >= 3 && < 5,
-    bytestring,
-    containers,
-    http-conduit,
-    network,
-    network-uri,
-    time,
-    old-locale
+    bytestring >= 0.10 && < 0.11,
+    containers >= 0.5 && < 0.6,
+    http-conduit >= 2.1 && < 2.2,
+    network >= 2.6 && < 2.7,
+    network-uri >= 2.6 && < 2.7,
+    time >= 1.4 && < 1.5,
+    old-locale >= 1.0 && < 1.1
 
   Exposed-modules:     Finance.Quote.Yahoo
 
