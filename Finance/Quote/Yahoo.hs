@@ -78,7 +78,7 @@ import qualified Network.HTTP.Conduit as H (simpleHttp)
 import qualified Network.URI as U (escapeURIString,isUnescapedInURI)
 import qualified Data.Time.Calendar as T (Day(..),fromGregorian)
 import qualified Data.Time.Format as F (formatTime)
-import qualified System.Locale as L (defaultTimeLocale)
+import qualified Data.Time.Format as L (defaultTimeLocale)
 import qualified Data.Map as M (fromList,Map)
 import qualified Data.List as D (intersperse)
 

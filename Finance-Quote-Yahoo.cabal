@@ -1,7 +1,7 @@
 Name:                Finance-Quote-Yahoo
 Version:             0.8.0
 Description:         Obtain quote data from finance.yahoo.com
-Synopsis:	     Obtain quote data from finance.yahoo.com
+Synopsis:	           Obtain quote data from finance.yahoo.com
 Category:            Web
 Stability:           experimental
 Homepage:            http://www.b7j0c.org/stuff/haskell-yquote.xhtml
@@ -13,7 +13,7 @@ cabal-version: 	     >=1.6
 build-type:          Simple
 
 Library 
-  Build-Depends: base >= 3 && < 5,bytestring,http-conduit,network,time,old-locale
+  Build-Depends: base >= 3 && < 5,bytestring,http-conduit,network,time,network-uri,containers
   Exposed-modules:     Finance.Quote.Yahoo
 
 source-repository this
